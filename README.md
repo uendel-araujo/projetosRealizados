@@ -1,0 +1,1 @@
+Neste repositório encontra-se os projetos dos quais já realizei, sendo eles no modo fictício ou para clientes reais.
