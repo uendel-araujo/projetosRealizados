@@ -25,7 +25,23 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img
 	vertical-align: baseline;
 }
 
+/* GERAIS DO SITE */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Nunito', Arial, Helvetica, sans-serif;
+	color: #222222;
+}
+
 h1, h2, h3, h4, h5, h6, p, a, ul {
 	font-size: 1em;
 	font-weight: normal;
+}
+
+img {
+	display: block;
+	max-width: 100%;
 }
