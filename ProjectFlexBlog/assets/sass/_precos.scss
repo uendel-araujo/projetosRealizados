@@ -7,7 +7,7 @@
 }
 
 .preco-item {
-    flex: 1;
+    flex: 1 1 240px;
     border: 4px solid white;
     padding: 20px;
     margin: 10px;
@@ -78,5 +78,13 @@
     .preco {
         padding-left: 10px ;
         padding-right: 10px ;
+    }
+
+    .preco .preco-item:nth-child(3) {
+        order: -2;
+    }
+
+    .preco .preco-item:nth-child(2) {
+        order: -1;
     }
 }
