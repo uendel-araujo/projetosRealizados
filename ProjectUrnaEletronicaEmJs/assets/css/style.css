@@ -1,3 +1,9 @@
+@keyframes pisca {
+    0% { opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -52,6 +58,9 @@ body {
 
 .d-1-3 {
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .numero {
     display: inline-block;
@@ -61,6 +70,10 @@ body {
     text-align: center;
     line-height: 40px;
     font-size: 25px;
+    margin-right: 2px;
+}
+.pisca {
+    animation: pisca 1s infinite;
 }
 
 .d-1-4 {
