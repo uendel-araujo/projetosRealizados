@@ -33,8 +33,23 @@ function comecarEtapa() {
 }
 
 function atualizaInterface() {
-    console.log('Atualizando Interface');
-    console.log(numero);
+    let etapa = etapas[etapaAtual];
+    let candidato = etapa.candidatos.filter((item) => {
+        if(item.numero === numero) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+
+    if(candidato.length > 0) {
+        candidato = candidato[0];
+        seuVotoPara.style.display = 'block';
+        descricao.innerHTML = `Nome: ${candidato.nome} <br/> Partido: ${candidato.partido}`;
+        aviso.style.display = 'block';
+    }
+
+    console.log('Candidato', candidato);
 }
 
 /** FUNÇÕES DE CONTROLE */
