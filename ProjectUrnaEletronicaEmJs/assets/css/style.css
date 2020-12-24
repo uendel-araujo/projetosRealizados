@@ -184,3 +184,10 @@ body {
     margin-left: 2px;
     cursor: none;
 }
+
+.aviso--grande {
+    margin-top: 40px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
