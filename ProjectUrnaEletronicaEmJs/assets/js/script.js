@@ -33,7 +33,8 @@ function comecarEtapa() {
 }
 
 function atualizaInterface() {
-
+    console.log('Atualizando Interface');
+    console.log(numero);
 }
 
 /** FUNÇÕES DE CONTROLE */
