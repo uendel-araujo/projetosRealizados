@@ -45,8 +45,15 @@ function atualizaInterface() {
     if(candidato.length > 0) {
         candidato = candidato[0];
         seuVotoPara.style.display = 'block';
-        descricao.innerHTML = `Nome: ${candidato.nome} <br/> Partido: ${candidato.partido}`;
+        descricao.innerHTML = `Nome: <b>${candidato.nome}</b> <br/> Partido: <b>${candidato.partido}</b>`;
         aviso.style.display = 'block';
+        
+        let fotosHtml = '';
+        for(let i in candidato.fotos) {
+            fotosHtml += `<div class="d-1-image"><img src="${candidato.fotos[i].url}" alt="${candidato.legenda}">${candidato.fotos[i].legenda}</div>`;
+        }
+
+        lateralDireita.innerHTML = fotosHtml;
     }
 
     console.log('Candidato', candidato);
