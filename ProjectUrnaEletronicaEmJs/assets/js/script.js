@@ -44,8 +44,12 @@ function clicou(n) {
         numero = `${numero}${n}`;
 
         elNumero.classList.remove('pisca');
-        if(){}
-        elNumero.nextElementSibling.classList.add('pisca');
+        if(elNumero.nextElementSibling !== null){
+            elNumero.nextElementSibling.classList.add('pisca');
+        } else {
+            atualizaInterface();
+        }
+        
     }
 }
 
