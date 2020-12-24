@@ -4,3 +4,19 @@ let numeros = document.querySelector('.d-1-3');
 let descricao = document.querySelector('.d-1-4');
 let lateralDireita = document.querySelector('.d-1-right');
 let aviso = document.querySelector('.d-2');
+
+function clicou(n) {
+    alert(`Clicou em ${n}`);
+}
+
+function branco() {
+    alert(`Clicou em BRANCO`);
+}
+
+function corrige() {
+    alert('Clicou em CORRIGE');
+}
+
+function confirma() {
+    alert(`Clicou em CONFIRMA`);
+}
